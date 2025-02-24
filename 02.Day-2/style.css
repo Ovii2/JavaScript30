@@ -1,0 +1,141 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;  
+}
+
+.clock-face {
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+}
+
+.hand {
+  width: 40%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.hour-hand {
+  width: 30%;
+  position: absolute;
+  left: 20%;
+}
+
+.center-dot {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.number-1 {
+  transform: rotate(30deg);
+}
+.number-2 {
+  transform: rotate(60deg);
+}
+.number-3 {
+  transform: rotate(90deg);
+}
+.number-4 {
+  transform: rotate(120deg);
+}
+.number-5 {
+  transform: rotate(150deg);
+}
+.number-6 {
+  transform: rotate(180deg);
+}
+.number-7 {
+  transform: rotate(210deg);
+}
+.number-8 {
+  transform: rotate(240deg);
+}
+.number-9 {
+  transform: rotate(270deg);
+}
+.number-10 {
+  transform: rotate(300deg);
+}
+.number-11 {
+  transform: rotate(330deg);
+}
+.number-12 {
+  transform: rotate(0deg);
+}
+
+.number span {
+  display: inline-block;
+  transform-origin: 0 0;
+}
+
+.number-1 span {
+  transform: rotate(-30deg) translateX(-1rem) translateY(-0.05rem);
+}
+.number-2 span {
+  transform: rotate(-60deg) translateX(-2rem) translateY(-0.5rem);
+}
+.number-3 span {
+  transform: rotate(-90deg) translateX(-2rem) translateY(-1rem);
+}
+.number-4 span {
+  transform: rotate(-120deg) translateX(-1.5rem) translateY(-2rem);
+}
+.number-5 span {
+  transform: rotate(-150deg) translateX(-0.5rem) translateY(-2.5rem);
+}
+.number-6 span {
+  transform: rotate(-180deg) translateX(0rem) translateY(-2.5rem);
+}
+.number-7 span {
+  transform: rotate(-210deg) translateX(-0.5rem) translateY(-2.5rem);
+}
+.number-8 span {
+  transform: rotate(-240deg) translateX(0.5rem) translateY(-3rem);
+}
+.number-9 span {
+  transform: rotate(-270deg) translateX(1rem) translateY(-2rem);
+}
+.number-10 span {
+  transform: rotate(-300deg) translateX(1.5rem) translateY(-1.5rem);
+}
+.number-11 span {
+  transform: rotate(-330deg) translateX(1rem) translateY(-0.5rem);
+}
+.number-12 span {
+  transform: rotate(0deg) translateX(0rem) translateY(0.1rem);
+}
